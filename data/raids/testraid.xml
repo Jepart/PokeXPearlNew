@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raid>
+	<!-- Message broadcast -->
+	<!-- Broadcast types: warning, event, default, description, smallstatus, blueconsole, redconsole -->
+	<announce delay="1000" type="warning" message="Bulbasaurs are attacking neart Saffron City CP!" />
+	<announce delay="25000" type="warning" message="Bulbasaurs attack continues!" />
+
+	<!-- Area spawns - you can specify raid area or use range value -->
+	<areaspawn delay="2000" radius="5" centerx="914" centery="821" centerz="7">
+		<pokemon name="Bulbasaur" amount="3" /><!-- Specified amount -->
+	</areaspawn>
+
+	<areaspawn delay="30000" fromx="911" fromy="801" fromz="7" tox="933" toy="820" toz="7">
+		<pokemon name="Bulbasaur" minamount="4" maxamount="10" /><!-- Random amount in specified range -->
+	</areaspawn>
+
+	<!-- Single spawns -->
+	<singlespawn delay="15000" name="Venusaur" x="933" y="820" z="7" />
+	<singlespawn delay="30000" name="Venusaur" x="912" y="821" z="7" />
+	<singlespawn delay="30000" name="Venusaur" x="922" y="821" z="7" />
+</raid>
